@@ -185,7 +185,6 @@ function startMovie() {
     opacity: 0.2
   }, 1);
 
-  return;
   for (var i = 0; i < particles.children.length; i++) {
     var mesh     = particles.children[i];
     var position = mesh.userData.lastPosition;
@@ -244,7 +243,7 @@ function endMovie() {
       new THREE.Color(0xffffff)
     );
     lensFlare.position.set(13, 74, 20);
-    // scene.add(lensFlare);
+    scene.add(lensFlare);
   }, 100);
 }
 
